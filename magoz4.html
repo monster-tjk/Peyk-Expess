@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary": "#5f5e5e", "surface-container-low": "#f6f3f2", "on-tertiary": "#ffffff", "surface-container": "#f0edec", "on-secondary-container": "#5e6572", "on-primary-container": "#6f5500", "inverse-surface": "#313030", "on-error": "#ffffff", "secondary-container": "#dce2f3", "primary-container": "#ffc928", "background": "#fcf9f8", "on-background": "#1c1b1b", "on-surface-variant": "#4e4633", "outline-variant": "#d2c5ac", "surface-tint": "#765a00", "surface-container-high": "#eae7e7", "error": "#ba1a1a", "primary-fixed": "#ffdf95", "surface-dim": "#dcd9d9", "secondary": "#585f6c", "on-error-container": "#93000a", "tertiary-container": "#d2d0cf", "primary-fixed-dim": "#f4bf1b", "on-surface": "#1c1b1b", "inverse-primary": "#f4bf1b", "on-primary-fixed-variant": "#594400", "surface": "#fcf9f8", "on-tertiary-fixed": "#1b1c1c", "on-secondary-fixed-variant": "#404754", "surface-variant": "#e5e2e1", "on-secondary": "#ffffff", "outline": "#807660", "inverse-on-surface": "#f3f0ef", "surface-bright": "#fcf9f8", "secondary-fixed-dim": "#c0c7d6", "on-tertiary-fixed-variant": "#474746", "error-container": "#ffdad6", "surface-container-highest": "#e5e2e1", "on-primary-fixed": "#251a00", "tertiary-fixed-dim": "#c8c6c5", "surface-container-lowest": "#ffffff", "secondary-fixed": "#dce2f3", "on-tertiary-container": "#595959", "tertiary-fixed": "#e5e2e1", "on-primary": "#ffffff", "on-secondary-fixed": "#151c27", "primary": "#765a00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-md": "1rem", "margin": "1rem", "gutter-sm": "0.75rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "margin-lg": "1.5rem", "gutter": "1rem" }, fontFamily: { "body-md": ["Inter"], "body-lg-medium": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "display": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "display-mobile": ["Inter"], "headline-lg-mobile": ["Inter"], "body-md-medium": ["Inter"], "headline-lg": ["Inter"] }, fontSize: { "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "body-lg-medium": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "600" }], "display": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "500" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "display-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-md-medium": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "500" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Peyk Express App Icon and Brand Symbol featuring a geometric parcel and stylized forward-motion P in golden yellow on deep black background" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VI5tRphRhdkfiSvTwTbv_sZQ5FKB1pn0_8x7T003hZvaa7FuvFV6stCH-NN443MUzmBwkCYwm6YhWszJyrw-GS-8yJ5SU02tLUMyuc_RTPkNRF7VXsOGAlq_obegA3C_FMv6YSAa4BgEcb0-X1ie22LanFL9WZBcfUE9LQPcPQWAK5mmmpo2m19Lrcs9NnUkCBswdB_NBrHJRaPqClcCDqBVm8EjAw4gZmjc7Lf3YE"/><div class="flex flex-col min-w-0 ml-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant leading-none">Peyk Express</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Profile Setup</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Progress Header -->
+<div class="pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Бақайдгирии фурӯшанда</span>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container-high px-space-sm py-0.5 rounded-full">Қадами 4 аз 6</span>
+</div>
+<!-- 6-Step Indicator -->
+<div aria-label="Пешрафти бақайдгирӣ" class="grid grid-cols-6 gap-1.5 py-space-xs">
+<div class="h-1.5 rounded-full bg-primary-container"></div>
+<div class="h-1.5 rounded-full bg-primary-container"></div>
+<div class="h-1.5 rounded-full bg-primary-container"></div>
+<div class="h-1.5 rounded-full bg-primary-container animate-pulse"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Verified Store Context Pill -->
+<div class="my-space-sm">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full shadow-sm max-w-full">
+<span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface truncate">Zarina Store</span>
+<span class="text-tertiary text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">+992 90 012 3456</span>
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<!-- Screen Heading -->
+<div class="mt-space-xs mb-space-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Маълумоти воридшавии худро созед</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Ин маълумот барои ворид шудан ба ҳисоби Peyk Express истифода мешавад.</p>
+</div>
+<!-- Form Fields Container -->
+<form class="flex flex-col gap-space-lg" id="authForm" onsubmit="event.preventDefault();">
+<!-- 1. Username Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between" for="usernameInput">
+<span>Номи корбар <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-tertiary">Ҳарфҳои лотинӣ</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-space-md font-body-lg-medium text-body-lg-medium text-tertiary select-none">@</span>
+<input autocomplete="username" class="w-full h-[52px] pl-9 pr-11 bg-surface-container-lowest text-on-surface font-body-lg-medium text-body-lg-medium rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="usernameInput" placeholder="номи_шумо" type="text" value="zarina_store"/>
+<div class="absolute right-space-md flex items-center">
+<span class="material-symbols-outlined text-primary text-[22px]" id="userValidationIcon" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Username Availability Notification -->
+<div class="flex items-center gap-space-xs px-space-xs mt-0.5" id="usernameStatus">
+<span class="material-symbols-outlined text-primary text-[16px]">check</span>
+<span class="font-label-sm text-label-sm text-on-primary-container font-semibold">Номи корбар озод аст</span>
+</div>
+<p class="hidden font-label-sm text-label-sm text-error px-space-xs mt-0.5" id="usernameError">
+        Ин номи корбар аллакай истифода мешавад. Номи дигар интихоб кунед.
+      </p>
+</div>
+<!-- 2. Password Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="pwdInput">
+        Рамзи махфӣ <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<input autocomplete="new-password" class="w-full h-[52px] pl-space-md pr-12 bg-surface-container-lowest text-on-surface font-body-lg-medium text-body-lg-medium rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="pwdInput" placeholder="Рамзи махфиро созед" type="password" value="Dushanbe2025!"/>
+<button aria-label="Нишон додан ё пинҳон кардани рамз" class="absolute right-2 w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:text-on-surface active:bg-surface-container transition-colors" id="togglePwdBtn" type="button">
+<span class="material-symbols-outlined text-[22px]" id="pwdEyeIcon">visibility</span>
+</button>
+</div>
+<!-- Password Strength Meter -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col gap-space-xs mt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Дараҷаи эътимоднокӣ:</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="strengthLabel">Қавӣ / Strong</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5">
+<div class="h-1.5 rounded-full bg-primary-container" id="bar1"></div>
+<div class="h-1.5 rounded-full bg-primary-container" id="bar2"></div>
+<div class="h-1.5 rounded-full bg-primary-container" id="bar3"></div>
+</div>
+<!-- Requirements Checklist -->
+<div class="grid grid-cols-1 gap-1 pt-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm" id="reqLen">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Ҳадди ақал 8 аломат</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm" id="reqCase">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Ҳарфи калон ва хурд</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm" id="reqChar">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Рақам ва аломати махсус</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Confirm Password Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="pwdConfirmInput">
+        Такрори рамзи махфӣ <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<input autocomplete="new-password" class="w-full h-[52px] pl-space-md pr-12 bg-surface-container-lowest text-on-surface font-body-lg-medium text-body-lg-medium rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="pwdConfirmInput" placeholder="Рамзи махфиро такрор кунед" type="password" value="Dushanbe2025!"/>
+<button aria-label="Нишон додан ё пинҳон кардани такрори рамз" class="absolute right-2 w-10 h-10 flex items-center justify-center rounded-full text-secondary hover:text-on-surface active:bg-surface-container transition-colors" id="toggleConfirmPwdBtn" type="button">
+<span class="material-symbols-outlined text-[22px]" id="confirmEyeIcon">visibility</span>
+</button>
+</div>
+<!-- Matching Indicator -->
+<div class="flex items-center gap-space-xs px-space-xs mt-0.5" id="matchNotice">
+<span class="material-symbols-outlined text-primary text-[16px]">task_alt</span>
+<span class="font-label-sm text-label-sm text-on-primary-container font-semibold">Рамзҳо мувофиқат мекунанд</span>
+</div>
+</div>
+<!-- Security Assurance Banner -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex items-start gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Муҳофизати баландтарини маълумот</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Ҳамаи паролҳо тавассути рамзгузории муосир ва HTTPS муҳофизат мешаванд.
+        </p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-[52px] bg-primary-container text-on-primary-fixed font-label-lg text-label-lg rounded-xl shadow-md flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform" id="continueBtn" type="submit">
+<span>Идома додан</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="w-full h-[48px] bg-surface-container text-on-surface font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-space-xs hover:bg-surface-container-high transition-colors" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Қадами қаблӣ</span>
+</button>
+</div>
+</form>
+</div>
+<script>
+(function() {
+  const usernameInput = document.getElementById('usernameInput');
+  const usernameStatus = document.getElementById('usernameStatus');
+  const usernameError = document.getElementById('usernameError');
+  const userValidationIcon = document.getElementById('userValidationIcon');
+
+  const pwdInput = document.getElementById('pwdInput');
+  const pwdConfirmInput = document.getElementById('pwdConfirmInput');
+  const togglePwdBtn = document.getElementById('togglePwdBtn');
+  const pwdEyeIcon = document.getElementById('pwdEyeIcon');
+  const toggleConfirmPwdBtn = document.getElementById('toggleConfirmPwdBtn');
+  const confirmEyeIcon = document.getElementById('confirmEyeIcon');
+
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+  const bar3 = document.getElementById('bar3');
+  const strengthLabel = document.getElementById('strengthLabel');
+  const matchNotice = document.getElementById('matchNotice');
+
+  const reqLen = document.getElementById('reqLen');
+  const reqCase = document.getElementById('reqCase');
+  const reqChar = document.getElementById('reqChar');
+
+  // Username validation simulation
+  if (usernameInput) {
+    usernameInput.addEventListener('input', () => {
+      const val = usernameInput.value.trim().toLowerCase();
+      if (val === 'admin' || val === 'zarina' || val === 'test') {
+        usernameStatus.classList.add('hidden');
+        usernameError.classList.remove('hidden');
+        userValidationIcon.textContent = 'cancel';
+        userValidationIcon.className = 'material-symbols-outlined text-error text-[22px]';
+      } else if (val.length > 2) {
+        usernameStatus.classList.remove('hidden');
+        usernameError.classList.add('hidden');
+        userValidationIcon.textContent = 'check_circle';
+        userValidationIcon.className = 'material-symbols-outlined text-primary text-[22px]';
+      } else {
+        usernameStatus.classList.add('hidden');
+        usernameError.classList.add('hidden');
+        userValidationIcon.textContent = 'pending';
+        userValidationIcon.className = 'material-symbols-outlined text-tertiary text-[22px]';
+      }
+    });
+  }
+
+  // Toggle password visibility
+  function setupToggle(button, input, icon) {
+    if (!button || !input || !icon) return;
+    button.addEventListener('click', () => {
+      const isPass = input.getAttribute('type') === 'password';
+      input.setAttribute('type', isPass ? 'text' : 'password');
+      icon.textContent = isPass ? 'visibility_off' : 'visibility';
+    });
+  }
+
+  setupToggle(togglePwdBtn, pwdInput, pwdEyeIcon);
+  setupToggle(toggleConfirmPwdBtn, pwdConfirmInput, confirmEyeIcon);
+
+  // Live Password check
+  function evaluatePassword() {
+    const val = pwdInput.value;
+    const confirmVal = pwdConfirmInput.value;
+
+    const hasLen = val.length >= 8;
+    const hasCase = /[A-Z]/.test(val) && /[a-z]/.test(val);
+    const hasChar = /\d/.test(val) && /[^A-Za-z0-9]/.test(val);
+
+    const updateReq = (el, passed) => {
+      const icon = el.querySelector('.material-symbols-outlined');
+      if (passed) {
+        icon.textContent = 'check_circle';
+        icon.className = 'material-symbols-outlined text-[16px] text-primary';
+        el.className = 'flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm';
+      } else {
+        icon.textContent = 'radio_button_unchecked';
+        icon.className = 'material-symbols-outlined text-[16px] text-tertiary';
+        el.className = 'flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm';
+      }
+    };
+
+    updateReq(reqLen, hasLen);
+    updateReq(reqCase, hasCase);
+    updateReq(reqChar, hasChar);
+
+    const score = (hasLen ? 1 : 0) + (hasCase ? 1 : 0) + (hasChar ? 1 : 0);
+
+    if (score === 3) {
+      strengthLabel.textContent = 'Қавӣ / Strong';
+      strengthLabel.className = 'font-label-sm text-label-sm text-primary font-bold';
+      bar1.className = 'h-1.5 rounded-full bg-primary-container';
+      bar2.className = 'h-1.5 rounded-full bg-primary-container';
+      bar3.className = 'h-1.5 rounded-full bg-primary-container';
+    } else if (score === 2) {
+      strengthLabel.textContent = 'Миёна / Medium';
+      strengthLabel.className = 'font-label-sm text-label-sm text-on-surface font-bold';
+      bar1.className = 'h-1.5 rounded-full bg-primary-fixed';
+      bar2.className = 'h-1.5 rounded-full bg-primary-fixed';
+      bar3.className = 'h-1.5 rounded-full bg-surface-container-highest';
+    } else {
+      strengthLabel.textContent = 'Суст / Weak';
+      strengthLabel.className = 'font-label-sm text-label-sm text-error font-bold';
+      bar1.className = 'h-1.5 rounded-full bg-error';
+      bar2.className = 'h-1.5 rounded-full bg-surface-container-highest';
+      bar3.className = 'h-1.5 rounded-full bg-surface-container-highest';
+    }
+
+    // Match notice
+    if (confirmVal.length > 0) {
+      if (val === confirmVal) {
+        matchNotice.innerHTML = `
+          <span class="material-symbols-outlined text-primary text-[16px]">task_alt</span>
+          <span class="font-label-sm text-label-sm text-on-primary-container font-semibold">Рамзҳо мувофиқат мекунанд</span>
+        `;
+      } else {
+        matchNotice.innerHTML = `
+          <span class="material-symbols-outlined text-error text-[16px]">error</span>
+          <span class="font-label-sm text-label-sm text-error font-semibold">Рамзҳо якхела нестанд</span>
+        `;
+      }
+    } else {
+      matchNotice.innerHTML = '';
+    }
+  }
+
+  if (pwdInput && pwdConfirmInput) {
+    pwdInput.addEventListener('input', evaluatePassword);
+    pwdConfirmInput.addEventListener('input', evaluatePassword);
+  }
+})();
+</script></main></body></html>

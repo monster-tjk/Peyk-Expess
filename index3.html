@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;min-height:100vh;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#c8c6c5","surface-tint":"#765a00","primary-fixed":"#ffdf95","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3f2","surface-bright":"#fcf9f8","secondary-fixed":"#dce2f3","on-tertiary-fixed-variant":"#474746","on-secondary":"#ffffff","on-secondary-fixed":"#151c27","inverse-primary":"#f4bf1b","on-primary-container":"#6f5500","surface-variant":"#e5e2e1","primary-container":"#ffc928","on-background":"#1c1b1b","primary":"#765a00","tertiary-container":"#d2d0cf","on-tertiary-fixed":"#1b1c1c","on-primary-fixed-variant":"#594400","secondary":"#585f6c","outline-variant":"#d2c5ac","surface-container-highest":"#e5e2e1","secondary-container":"#dce2f3","on-primary":"#ffffff","background":"#fcf9f8","tertiary":"#5f5e5e","surface-container":"#f0edec","on-surface":"#1c1b1b","on-secondary-fixed-variant":"#404754","on-primary-fixed":"#251a00","outline":"#807660","error-container":"#ffdad6","surface":"#fcf9f8","on-secondary-container":"#5e6572","surface-dim":"#dcd9d9","inverse-surface":"#313030","inverse-on-surface":"#f3f0ef","on-tertiary":"#ffffff","surface-container-high":"#eae7e7","error":"#ba1a1a","primary-fixed-dim":"#f4bf1b","on-error":"#ffffff","tertiary-fixed":"#e5e2e1","on-surface-variant":"#4e4633","on-error-container":"#93000a","on-tertiary-container":"#595959","secondary-fixed-dim":"#c0c7d6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","space-xl":"2rem","gutter-sm":"0.75rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1rem","margin-lg":"1.5rem","margin":"1rem"},fontFamily:{"label-lg":["Inter"],"body-lg-medium":["Inter"],"display":["Inter"],"body-lg":["Inter"],"body-md-medium":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-sm":["Inter"],"display-mobile":["Inter"],"label-md":["Inter"]},fontSize:{"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg-medium":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"500"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-md-medium":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><main class="flex flex-col relative w-full flex-1 bg-surface pt-safe pb-safe"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Top Bar: Compact Language Switcher & Quick Mode Feedback -->
+<div class="flex items-center justify-between py-space-sm">
+<div class="inline-flex items-center p-1 bg-surface-container rounded-full shadow-sm" id="lang-switcher">
+<button class="lang-btn px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-all shadow-sm" data-lang="tg" type="button">
+        Тоҷикӣ
+      </button>
+<button class="lang-btn px-3 py-1 rounded-full text-secondary font-label-md text-label-md hover:text-on-surface transition-all" data-lang="ru" type="button">
+        Русский
+      </button>
+<button class="lang-btn px-3 py-1 rounded-full text-secondary font-label-md text-label-md hover:text-on-surface transition-all" data-lang="en" type="button">
+        EN
+      </button>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="tracking-wide">ТАҶРИБАИ РӮЗОНА</span>
+</div>
+</div>
+<!-- Hero Visual & Brand Mark Section -->
+<div class="relative flex flex-col items-center justify-center pt-space-md pb-space-sm text-center">
+<!-- Ambient Golden Velocity Backlight -->
+<div class="absolute w-44 h-44 rounded-full bg-primary-container/25 blur-3xl -z-10 pointer-events-none"></div>
+<!-- Official Brand Logo Container -->
+<div class="relative group cursor-pointer">
+<div class="w-24 h-24 rounded-3xl bg-inverse-surface shadow-xl flex items-center justify-center p-3 relative overflow-hidden transition-transform active:scale-95 duration-200">
+<img alt="Peyk Express" class="w-full h-full object-contain rounded-2xl" src="https://lh3.googleusercontent.com/aida/AEtjO1UstkVKT3JTStqPcjhdCCL04wQZyMFMJIGFmF9yL49kS8zM3IvuF7b1zICrB_82PY0iINByoGgg5-4rbwJbOhVAcznVmIEv2Rg52M6m_QUkvScl-1ZS3CrdmO9qTMgNi4oLVxUP7iNmO_A3H0zNHoTAfH1OOC2GFadTBUKCe0XzNB_nY8qU2JL8vgxaCLQ1yc5FZbTdmi8zCqwlMgbHxwz7EuFq0Yb_ULAVRLPSfaDw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/20 to-transparent pointer-events-none"></div>
+</div>
+<!-- Speed Dash Accent -->
+<span class="absolute -right-2 top-2 bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>EXPRESS</span>
+</span>
+</div>
+<!-- Wordmark & Micro Subtitle -->
+<div class="mt-space-md">
+<div class="flex items-center justify-center gap-1.5">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Peyk</h2>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">Express</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-0.5">Logistics &amp; Courier Network</p>
+</div>
+</div>
+<!-- Interactive Graphic Delivery Card: Tactile Bento Visual -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-space-md shadow-md my-space-sm overflow-hidden">
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 min-w-0">
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm mb-1.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span>Фарогирии 100% шаҳрӣ</span>
+</div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">Хизматрасонии боэътимод</p>
+<p class="font-label-sm text-label-sm text-secondary truncate">Душанбе • Хуҷанд • Бохтар • Кӯлоб</p>
+</div>
+<!-- Compact Geometric Speed Parcel SVG -->
+<div class="w-16 h-16 rounded-xl bg-inverse-surface flex items-center justify-center shrink-0 relative overflow-hidden shadow-sm">
+<svg class="w-10 h-10 text-primary-container" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 18L24 10L40 18L24 26L8 18Z" fill="currentColor"></path>
+<path d="M8 22L24 30L40 22V30L24 38L8 30V22Z" fill="currentColor" fill-opacity="0.75"></path>
+<circle cx="36" cy="14" fill="#ffffff" r="3"></circle>
+<path d="M4 14H12" stroke="#ffffff" stroke-linecap="round" stroke-width="2"></path>
+<path d="M6 19H10" stroke="#ffffff" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Live Active Courier Mini-Status -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between bg-surface-container-low rounded-xl px-3 py-2">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">1,480+ Курьерҳои фаъол</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Вақти миёна: 24 дақ</span>
+</div>
+</div>
+<!-- Multilingual Heading & Story Block -->
+<div class="my-space-sm text-left">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight" id="main-heading">
+      Хуш омадед ба Peyk Express
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed" id="main-subhead">
+      Платформаи пайвасткунандаи дӯконҳои онлайн бо хаткашонҳо ва курьерҳои боэътимод дар саросари кишвар.
+    </p>
+<p class="font-label-sm text-label-sm text-secondary mt-1.5 leading-normal" id="secondary-subhead">
+      Платформа доставки посылок для интернет-магазинов и курьеров • Connecting online stores with couriers
+    </p>
+</div>
+<!-- Key Value Props / Tactile Trust Badges Stack -->
+<div class="flex flex-col gap-2.5 my-space-sm">
+<!-- Value Prop 1 -->
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface" id="vp1-title">Суръат ва эътимод</h3>
+<p class="font-label-sm text-label-sm text-secondary truncate" id="vp1-desc">Интиқоли фаврӣ аз дари мағоза то дасти муштарӣ</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-base">check_circle</span>
+</div>
+<!-- Value Prop 2 -->
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-inverse-surface text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface" id="vp2-title">Пайгирии зинда</h3>
+<p class="font-label-sm text-label-sm text-secondary truncate" id="vp2-desc">Харитаи мустақим ва огоҳиномаҳои SMS дар ҳар қадам</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-base">check_circle</span>
+</div>
+<!-- Value Prop 3 -->
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface" id="vp3-title">Кафолати пардохт (COD)</h3>
+<p class="font-label-sm text-label-sm text-secondary truncate" id="vp3-desc">Пардохти бехатари пули нақд ва гузаронидани зуд ба корт</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-base">check_circle</span>
+</div>
+</div>
+<!-- Action CTA Area -->
+ <a href="./index4.html">
+<div class="mt-space-md flex flex-col gap-3">
+<!-- Primary CTA: Branded Golden Yellow Button -->
+<button class="w-full h-[52px] bg-primary-container text-on-background font-body-lg-medium text-body-lg-medium rounded-xl flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all" type="button">
+<span id="cta-label">Оғоз кардан</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<!-- Secondary Login Link -->
+<div class="flex items-center justify-center py-1">
+<button class="font-body-md-medium text-body-md-medium text-secondary hover:text-on-surface active:opacity-75 transition-colors" type="button">
+<span id="login-pre">Аллакай ҳисоб доред?</span>
+<span class="text-primary font-semibold ml-1" id="login-link">Ворид шавед</span>
+</button>
+</div>
+</div>
+</a>
+</div>
+<script>
+  (function () {
+    const langData = {
+      tg: {
+        heading: "Хуш омадед ба Peyk Express",
+        subhead: "Платформаи пайвасткунандаи дӯконҳои онлайн бо хаткашонҳо ва курьерҳои боэътимод дар саросари кишвар.",
+        secondarySubhead: "Платформа доставки посылок для интернет-магазинов и курьеров • Connecting online stores with couriers",
+        vp1Title: "Суръат ва эътимод",
+        vp1Desc: "Интиқоли фаврӣ аз дари мағоза то дасти муштарӣ",
+        vp2Title: "Пайгирии зинда",
+        vp2Desc: "Харитаи мустақим ва огоҳиномаҳои SMS дар ҳар қадам",
+        vp3Title: "Кафолати пардохт (COD)",
+        vp3Desc: "Пардохти бехатари пули нақд ва гузаронидани зуд ба корт",
+        cta: "Оғоз кардан",
+        loginPre: "Аллакай ҳисоб доред?",
+        loginLink: "Ворид шавед"
+      },
+      ru: {
+        heading: "Добро пожаловать в Peyk Express",
+        subhead: "Платформа, объединяющая интернет-магазины с проверенными курьерами по всей стране.",
+        secondarySubhead: "Платформаи пайвасткунандаи дӯконҳои онлайн бо хаткашонҳо • Fast and reliable deliveries",
+        vp1Title: "Скорость и надёжность",
+        vp1Desc: "Быстрая доставка от склада до двери клиента",
+        vp2Title: "Живой трекинг посылок",
+        vp2Desc: "Онлайн карта и статус доставки в реальном времени",
+        vp3Title: "Безопасный наложенный платёж",
+        vp3Desc: "Гарантированный возврат оплаты наличными и на карту",
+        cta: "Начать работу",
+        loginPre: "Уже зарегистрированы?",
+        loginLink: "Войти"
+      },
+      en: {
+        heading: "Welcome to Peyk Express",
+        subhead: "The premier logistics network connecting online merchants with verified couriers nationwide.",
+        secondarySubhead: "Платформа доставки посылок для магазинов и курьеров • Эътимод ва суръат дар интиқол",
+        vp1Title: "Speed & Reliability",
+        vp1Desc: "Express doorstep pickup & delivery in record time",
+        vp2Title: "Live GPS Tracking",
+        vp2Desc: "Real-time dispatch telemetry and instant SMS notifications",
+        vp3Title: "Secure COD Remittance",
+        vp3Desc: "Insured cash-on-delivery and same-day merchant settlement",
+        cta: "Get Started",
+        loginPre: "Already have an account?",
+        loginLink: "Log In"
+      }
+    };
+
+    const buttons = document.querySelectorAll(".lang-btn");
+    const heading = document.getElementById("main-heading");
+    const subhead = document.getElementById("main-subhead");
+    const secondarySubhead = document.getElementById("secondary-subhead");
+    const vp1Title = document.getElementById("vp1-title");
+    const vp1Desc = document.getElementById("vp1-desc");
+    const vp2Title = document.getElementById("vp2-title");
+    const vp2Desc = document.getElementById("vp2-desc");
+    const vp3Title = document.getElementById("vp3-title");
+    const vp3Desc = document.getElementById("vp3-desc");
+    const ctaLabel = document.getElementById("cta-label");
+    const loginPre = document.getElementById("login-pre");
+    const loginLink = document.getElementById("login-link");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang");
+        const data = langData[lang];
+        if (!data) return;
+
+        buttons.forEach((b) => {
+          b.className = "lang-btn px-3 py-1 rounded-full text-secondary font-label-md text-label-md hover:text-on-surface transition-all";
+        });
+        btn.className = "lang-btn px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-all shadow-sm";
+
+        heading.textContent = data.heading;
+        subhead.textContent = data.subhead;
+        secondarySubhead.textContent = data.secondarySubhead;
+        vp1Title.textContent = data.vp1Title;
+        vp1Desc.textContent = data.vp1Desc;
+        vp2Title.textContent = data.vp2Title;
+        vp2Desc.textContent = data.vp2Desc;
+        vp3Title.textContent = data.vp3Title;
+        vp3Desc.textContent = data.vp3Desc;
+        ctaLabel.textContent = data.cta;
+        loginPre.textContent = data.loginPre;
+        loginLink.textContent = data.loginLink;
+      });
+    });
+  })();
+</script></main></body></html>5
+JKL

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="light" lang="tg">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Peyk Express - Интихоби нақш</title>
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fcf9f8 0%, #f0edec 100%);
+    }
+  </style>
+</head>
+<body class="text-gray-900 antialiased flex flex-col min-h-screen">
+  
+  <!-- Сарлавҳаи муосир ва шишагӣ -->
+  <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <div class="h-16 px-5 flex items-center justify-between max-w-md mx-auto">
+      <div class="flex items-center gap-3">
+        <button aria-label="Ба қафо" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100/80 hover:bg-gray-200 transition-all text-gray-800" onclick="history.back()" type="button">
+          <span class="material-symbols-outlined text-xl">arrow_back</span>
+        </button>
+        <div class="flex flex-col">
+          <span class="text-[10px] text-amber-600 uppercase tracking-widest font-extrabold">Peyk Express</span>
+          <h1 class="text-base font-bold text-gray-900">Интихоби нақш</h1>
+        </div>
+      </div>
+      <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-white shadow-md shadow-amber-500/20">
+        <span class="material-symbols-outlined text-lg">person</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Қисми асосӣ -->
+  <main class="flex flex-col relative w-full flex-1 pt-24 pb-8 px-5 max-w-md mx-auto">
+    
+    <div class="flex flex-col gap-1.5 mb-6">
+      <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight">
+        Шумо ҳамчун кӣ сабти ном мешавед?
+      </h2>
+      <p class="text-sm text-gray-500 font-medium">
+        Барои оғоз нақши худро дар платформа интихоб кунед:
+      </p>
+    </div>
+
+    <!-- Интихоби нақшҳо -->
+    <div class="flex flex-col gap-4 mb-8">
+      
+      <!-- Дӯкони онлайн (Store) -->
+      <div class="group relative flex flex-col p-5 rounded-3xl transition-all duration-300 cursor-pointer shadow-lg bg-white border-2 border-amber-500 ring-4 ring-amber-500/10" id="role-store" onclick="selectRole('store')">
+        <div class="flex items-start justify-between gap-3 mb-3">
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center shadow-md shadow-amber-500/30">
+              <span class="material-symbols-outlined text-2xl">storefront</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-gray-900">Дӯкони онлайн</span>
+              <span class="text-xs text-amber-600 font-semibold">Интернет-магазин • Storefront</span>
+            </div>
+          </div>
+          <div class="w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center transition-colors shadow-sm" id="radio-store">
+            <span class="material-symbols-outlined text-sm font-bold">check</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 font-normal leading-relaxed mb-4">
+          Фармоишҳои худро сабт намоед ва интиқоли фавриро ба харидорон бо суръат назорат кунед.
+        </p>
+        <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-gray-100">
+          <span class="inline-flex items-center gap-1 bg-amber-50 text-amber-800 px-3 py-1 rounded-full text-xs font-bold">📦 Фармоишҳои бемаҳдуд</span>
+          <span class="inline-flex items-center gap-1 bg-gray-50 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">📊 Ҳисоботи молиявӣ</span>
+        </div>
+      </div>
+
+      <!-- Курьер (Courier) -->
+      <div class="group relative flex flex-col p-5 rounded-3xl transition-all duration-300 cursor-pointer shadow-sm bg-white border-2 border-gray-100 hover:border-gray-200" id="role-courier" onclick="selectRole('courier')">
+        <div class="flex items-start justify-between gap-3 mb-3">
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-gray-100 text-gray-700 flex items-center justify-center transition-colors" id="courier-icon-box">
+              <span class="material-symbols-outlined text-2xl">two_wheeler</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-gray-900">Курьер</span>
+              <span class="text-xs text-gray-500 font-semibold">Хаткашон • Dispatch Courier</span>
+            </div>
+          </div>
+          <div class="w-6 h-6 rounded-full bg-gray-200 text-white flex items-center justify-center transition-colors" id="radio-courier">
+            <span class="material-symbols-outlined text-sm opacity-0 font-bold">check</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 font-normal leading-relaxed mb-4">
+          Фармоишҳои наздиктаринро дар шаҳри худ гирифта, даромади устувор ба даст оред.
+        </p>
+        <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-gray-100">
+          <span class="inline-flex items-center gap-1 bg-gray-50 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">🛵 Реҷаи озод</span>
+          <span class="inline-flex items-center gap-1 bg-gray-50 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">💰 Пардохти ҳаррӯза</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Поён ва тугмаи идома -->
+    <div class="mt-auto flex flex-col gap-3">
+      <div class="flex items-center justify-center gap-1.5 text-center text-gray-500 text-xs font-medium bg-white/60 py-2.5 px-3 rounded-2xl border border-gray-100 shadow-sm">
+        <span class="material-symbols-outlined text-amber-600 text-lg">info</span>
+        <span>Шумо метавонед нақшро баъдтар дар танзимот иваз кунед</span>
+      </div>
+      
+      <!-- Тугмаи пайвастшуда ба magoza.html ва kurier.html -->
+      <button onclick="goToNextPage()" class="w-full h-14 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white rounded-2xl font-bold text-base flex items-center justify-center gap-2 shadow-xl shadow-amber-500/25 active:scale-[0.98] transition-all cursor-pointer" type="button">
+        <span>Идома / Продолжить</span>
+        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+      </button>
+    </div>
+  </main>
+
+  <script>
+    let currentSelectedRole = 'store';
+
+    function selectRole(role) {
+      currentSelectedRole = role;
+      const storeCard = document.getElementById('role-store');
+      const courierCard = document.getElementById('role-courier');
+      const storeRadio = document.getElementById('radio-store');
+      const courierRadio = document.getElementById('radio-courier');
+      const courierIconBox = document.getElementById('courier-icon-box');
+
+      if (role === 'store') {
+        // Дизайни фаъол барои Дӯкон
+        storeCard.className = "group relative flex flex-col p-5 rounded-3xl transition-all duration-300 cursor-pointer shadow-lg bg-white border-2 border-amber-500 ring-4 ring-amber-500/10";
+        courierCard.className = "group relative flex flex-col p-5 rounded-3xl transition-all duration-300 cursor-pointer shadow-sm bg-white border-2 border-gray-100 hover:border-gray-200";
+        
+        storeRadio.className = "w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center transition-colors shadow-sm";
+        storeRadio.innerHTML = '<span class="material-symbols-outlined text-sm font-bold">check</span>';
+
+        courierRadio.className = "w-6 h-6 rounded-full bg-gray-200 text-white flex items-center justify-center transition-colors";
+        courierRadio.innerHTML = '<span class="material-symbols-outlined text-sm opacity-0 font-bold">check</span>';
+
+        courierIconBox.className = "w-12 h-12 rounded-2xl bg-gray-100 text-gray-700 flex items-center justify-center transition-colors";
+      } else {
+        // Дизайни фаъол барои Курьер
+        courierCard.className = "group relative flex flex-col p-5 rounded-3xl transition-all duration-300 cursor-pointer shadow-lg bg-white border-2 border-amber-500 ring-4 ring-amber-500/10";
+        storeCard.className = "group relative flex flex-col p-5 rounded-3xl transition-all duration-300 cursor-pointer shadow-sm bg-white border-2 border-gray-100 hover:border-gray-200";
+        
+        courierRadio.className = "w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center transition-colors shadow-sm";
+        courierRadio.innerHTML = '<span class="material-symbols-outlined text-sm font-bold">check</span>';
+
+        storeRadio.className = "w-6 h-6 rounded-full bg-gray-200 text-white flex items-center justify-center transition-colors";
+        storeRadio.innerHTML = '<span class="material-symbols-outlined text-sm opacity-0 font-bold">check</span>';
+
+        courierIconBox.className = "w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center transition-colors shadow-md shadow-amber-500/30";
+      }
+    }
+
+    // Гузариш ба саҳифаҳои дилхоҳ (magoza.html ва kurier.html)
+    function goToNextPage() {
+      if (currentSelectedRole === 'store') {
+        window.location.href = "magoza.html"; 
+      } else {
+        window.location.href = "kurier.html"; 
+      }
+    }
+  </script>
+</body>
+</html>
